@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import './Navbar.css';
 
 function CustomNavbar() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    document.body.classList.toggle('dark-mode');
+  };
+
   return (
     <div>
-      <Navbar expand="lg" className="bg-body-tertiary fixed-top">
+      <Navbar expand="lg" className={`bg-body-tertiary fixed-top ${isDarkMode ? 'dark-mode' : ''}`}>
         <Container>
           <Navbar.Brand href="#home"><strong>EpheFrans Mokobane Trucking</strong></Navbar.Brand>
         </Container>
@@ -20,6 +27,15 @@ function CustomNavbar() {
               <Nav.Link href="#contact">Contact</Nav.Link>
               <Nav.Link href="#Footer">Footer</Nav.Link>
             </Nav>
+            <div className="dark-mode-switch">
+              <input
+                type="checkbox"
+                id="darkModeSwitch"
+                checked={isDarkMode}
+                onChange={toggleDarkMode}
+              />
+              <label htmlFor="darkModeSwitch"></label>
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>

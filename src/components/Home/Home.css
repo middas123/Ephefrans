@@ -1,0 +1,31 @@
+/* Style the landing page container */
+.landing-page-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Style the left section (image) */
+  .left-section {
+    flex: 1;
+  }
+  
+  .welcome-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Style the right section (welcome message) */
+  .right-section {
+    flex: 2;
+    padding-left: 20px;
+  }
+  
+  .right-section header {
+    margin-bottom: 20px;
+  }
+  
+  .right-section p {
+    line-height: 1.6;
+  }
+  

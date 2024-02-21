@@ -10,7 +10,7 @@
   .nav-link {
     font-size: 0.8rem;
     font-weight: 1000;
-    margin-left: 0px;
+    margin-left: 50px;
     padding: 10px;
     text-transform: uppercase;
     transition: color 0.3s ease;
@@ -52,6 +52,53 @@
   transform: scale(1.1);
 }
 
+/* Add styles for dark mode */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Style the dark mode switch */
+  .dark-mode-switch {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dark-mode-switch input {
+    display: none;
+  }
+  
+  .dark-mode-switch label {
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    margin: 0 10px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .dark-mode-switch label:before {
+    background-color: #333;
+    border-radius: 50%;
+    content: '';
+    height: 26px;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    width: 26px;
+    transition: transform 0.3s ease;
+  }
+  
+  .dark-mode-switch input:checked + label {
+    background-color: #333;
+  }
+  
+  .dark-mode-switch input:checked + label:before {
+    transform: translateX(30px);
+  }
+  
   /* Responsive styles */
   @media (max-width: 991px) {
     .navbar-nav {
