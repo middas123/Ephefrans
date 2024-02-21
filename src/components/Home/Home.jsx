@@ -7,7 +7,7 @@ const Home = () => {
     <div className="landing-page-container">
       <div className="left-section">
         <img
-         src="/assets/trucks3.png"
+         src="EpheFrans\src\assets\trucks 3.png"
           alt="Welcome Image"
           className="welcome-image"
         />
