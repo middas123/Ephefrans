@@ -19,19 +19,23 @@ const Home = () => {
           <h5> You're Goods Safety is our consent</h5>
         </header>
         <section>
+        <h3>Whats new?</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            eget quam vel libero ullamcorper eleifend. Integer efficitur
-            libero sit amet ligula congue ultrices. Nunc aliquam, justo eu
-            varius iaculis, arcu justo congue libero.
+            We are running a 25% promotions on all our new clients,
+            that are going to be transporting their goods with -
+            us for over a 200+ KM Radius 
           </p>
+          <h3>Employee Of the Month</h3>
           <p>
-            Etiam vel metus ut eros ultrices suscipit nec sit amet nulla.
-            Vestibulum posuere dapibus nisi, ac cursus dolor tincidunt a.
-            Vestibulum a bibendum urna. Curabitur id ipsum non libero
-            convallis tristique non ut quam. Proin et libero id metus
-            feugiat consequat eget ac elit.
+            Our employee driver of the month goes to Maloma,
+            who never got an accident and was always on time -
+            Help us Congratulate him.
           </p>
+          <img
+          src="EpheFrans\src\assets\maloma drives.jpg"
+          alt="Welcome Image"
+          className="welcome-image"
+        />
         </section>
       </div>
     </div>

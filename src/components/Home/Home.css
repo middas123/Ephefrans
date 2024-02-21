@@ -29,3 +29,25 @@
     line-height: 1.6;
   }
   
+  /* Keyframes for the flashing effect */
+@keyframes flash {
+    0%, 50%, 100% {
+      color: #836666; 
+    }
+    25%, 75% {
+      color: #75d375; 
+    }
+  }
+  
+  /* Apply the flashing effect to the headers */
+  header h1, header h5, section h3 {
+    animation: flash 5s infinite; /* Adjust the duration as needed */
+  }
+  
+  /* Style for other text content */
+  section p {
+    color: #000; /* Set the default color for the paragraph */
+  }
+  
+  /* Add additional styles as needed */
+  

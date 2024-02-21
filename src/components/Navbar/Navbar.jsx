@@ -14,7 +14,9 @@ function CustomNavbar() {
     <div>
       <Navbar expand="lg" className={`bg-body-tertiary fixed-top ${isDarkMode ? 'dark-mode' : ''}`}>
         <Container>
-          <Navbar.Brand href="#home"><strong>EpheFrans Mokobane Trucking</strong></Navbar.Brand>
+          <Navbar.Brand href="#home">
+            <strong>EpheFrans Mokobane Trucking</strong>
+          </Navbar.Brand>
         </Container>
 
         <Container>
@@ -28,15 +30,15 @@ function CustomNavbar() {
               <Nav.Link href="#Footer">Footer</Nav.Link>
               <Nav.Link href="#Faq">Faq</Nav.Link>
             </Nav>
-            <div className="dark-mode-switch">
-              <input
-                type="checkbox"
-                id="darkModeSwitch"
-                checked={isDarkMode}
-                onChange={toggleDarkMode}
-              />
-              <label htmlFor="darkModeSwitch"></label>
-            </div>
+            <span
+              className="emoji-toggle"
+              role="img"
+              aria-label="Toggle Dark Mode"
+              onClick={toggleDarkMode}
+              style={{ cursor: 'pointer' }} // Add cursor style
+            >
+              {isDarkMode ? '🌙' : '☀️'}
+            </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>
