@@ -26,6 +26,7 @@ function CustomNavbar() {
               <Nav.Link href="#services">Services</Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
               <Nav.Link href="#Footer">Footer</Nav.Link>
+              <Nav.Link href="#Faq">Faq</Nav.Link>
             </Nav>
             <div className="dark-mode-switch">
               <input

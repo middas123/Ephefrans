@@ -1,12 +1,13 @@
 import React from 'react';
 import './Home.css'; // Import your styling for the landing page
 
+
 const Home = () => {
   return (
     <div className="landing-page-container">
       <div className="left-section">
         <img
-          src="path/to/your/image.jpg"
+         src="/assets/trucks3.png"
           alt="Welcome Image"
           className="welcome-image"
         />
@@ -14,6 +15,8 @@ const Home = () => {
       <div className="right-section">
         <header>
           <h1>Welcome to EpheFrans Mokobane Trucking</h1>
+          <br /> 
+          <h5> You're Goods Safety is our consent</h5>
         </header>
         <section>
           <p>
