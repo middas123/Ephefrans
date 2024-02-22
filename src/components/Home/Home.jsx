@@ -1,15 +1,21 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CS
 import './Home.css';
 
 const Home = () => {
+  const backgroundImageStyle = {
+    backgroundImage: `url('EpheFrans/src/assets/your_background_image.jpg')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  };
+
   return (
-    <div className="jumbotron-fluid landing-page-container">
+    <div className="jumbotron-fluid landing-page-container" style={backgroundImageStyle}>
       <div className="container">
         <div className="row">
           <div className="col-lg-6 left-section">
             <img
-              src="EpheFrans\src\assets\trucks 3.png"
+              src="EpheFrans/src/assets/trucks 3.png"
               alt="Welcome Image"
               className="welcome-image"
             />
@@ -33,7 +39,7 @@ const Home = () => {
                 Help us Congratulate him.
               </p>
               <img
-                src="EpheFrans\src\assets\maloma drives.jpg"
+                src="EpheFrans/src/assets/maloma drives.jpg"
                 alt="Welcome Image"
                 className="welcome-image"
               />

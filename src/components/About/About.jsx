@@ -28,8 +28,38 @@ const AboutPage = () => {
           <li>Customer Satisfaction: Your satisfaction is our priority, and we go the extra mile to exceed your expectations.</li>
         </ul>
         
-         <h3>Industries</h3>
-         
+                    <div>
+            <h3>Industries</h3>
+            <div className="row">
+                <div className="col">
+                <div className="card" style={{ backgroundImage: 'url(path_to_image_1.jpg)' }}>
+                    <div className="card-body">
+                    <h5 className="card-title">Mining</h5>
+                    <br />
+                    <p className="card-text">Content for the first industry goes here.</p>
+                    </div>
+                </div>
+                </div>
+                <div className="col">
+                <div className="card" style={{ backgroundImage: 'url(path_to_image_2.jpg)' }}>
+                    <div className="card-body">
+                    <h5 className="card-title">Border to Border</h5>
+                    <br />
+                    <p className="card-text">Content for the second industry goes here.</p>
+                    </div>
+                </div>
+                </div>
+                <div className="col">
+                <div className="card" style={{ backgroundImage: 'url(path_to_image_3.jpg)' }}>
+                    <div className="card-body">
+                    <h5 className="card-title">Health</h5>
+                    <br />
+                    <p className="card-text">Content for the third industry goes here.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
 
       </div>
     </div>

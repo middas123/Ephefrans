@@ -35,4 +35,13 @@
   ul li {
     margin-bottom: 8px; /* Add spacing between list items */
   }
+  /* Your external CSS file (e.g., styles.css) */
+
+.card-with-background {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  /* Add this class to each card element in your JSX */
   
