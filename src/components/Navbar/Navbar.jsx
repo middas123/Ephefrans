@@ -15,7 +15,8 @@ function CustomNavbar() {
       <Navbar expand="lg" className={`bg-body-tertiary fixed-top ${isDarkMode ? 'dark-mode' : ''}`}>
         <Container>
           <Navbar.Brand href="#home">
-            <strong>EpheFrans Mokobane Trucking</strong>
+            <strong>EpheFrans Mokobane
+          </strong>
           </Navbar.Brand>
         </Container>
 

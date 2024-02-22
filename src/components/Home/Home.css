@@ -1,53 +1,23 @@
-/* Style the landing page container */
+/* Home.css */
+
+.jumbotron {
+  background-color: #f8f9fa; /* Set the background color as per your design */
+  padding: 60px 15px; /* Adjust the padding to your liking */
+}
+
 .landing-page-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  /* Style the left section (image) */
-  .left-section {
-    flex: 1;
-  }
-  
-  .welcome-image {
-    width: 100%;
-    height: auto;
-  }
-  
-  /* Style the right section (welcome message) */
-  .right-section {
-    flex: 2;
-    padding-left: 20px;
-  }
-  
-  .right-section header {
-    margin-bottom: 20px;
-  }
-  
-  .right-section p {
-    line-height: 1.6;
-  }
-  
-  /* Keyframes for the flashing effect */
-@keyframes flash {
-    0%, 50%, 100% {
-      color: #836666; 
-    }
-    25%, 75% {
-      color: #75d375; 
-    }
-  }
-  
-  /* Apply the flashing effect to the headers */
-  header h1, header h5, section h3 {
-    animation: flash 5s infinite; /* Adjust the duration as needed */
-  }
-  
-  /* Style for other text content */
-  section p {
-    color: #000; /* Set the default color for the paragraph */
-  }
-  
-  /* Add additional styles as needed */
-  
+  margin-top: 20px; /* Add margin for better spacing */
+}
+
+.left-section img {
+  max-width: 100%; /* Ensure the image within the left section doesn't exceed its container */
+}
+
+.right-section {
+  text-align: left; /* Align text in the right section to the left */
+}
+
+.welcome-image {
+  width: 100%; /* Ensure the image within the right section takes full width */
+  border-radius: 50px; /* Add border-radius for a rounded corner effect, adjust as needed */
+}
