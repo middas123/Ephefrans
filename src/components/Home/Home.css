@@ -21,3 +21,28 @@
   width: 100%; /* Ensure the image within the right section takes full width */
   border-radius: 50px; /* Add border-radius for a rounded corner effect, adjust as needed */
 }
+
+.welcome-image_1 {
+  width: 100%; /* Ensure the image within the right section takes full width */
+  border-radius: 40px; /* Add border-radius for a rounded corner effect, adjust as needed */
+}
+/* Home.css */
+
+.display-4, .lead {
+  color: rgb(76, 78, 194); /* Replace 'yourColor' with the desired color code or name */
+}
+
+.welcome-image{
+  width: 3500%;
+  height: 100%;
+  display: block;
+  margin: left;
+  object-fit: cover;
+}
+.welcome-image_1{
+  width: 35%;
+  height: 100%;
+  display: block;
+  margin: left;
+  object-fit: cover;
+}

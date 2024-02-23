@@ -32,7 +32,7 @@ const AboutPage = () => {
             <h3>Industries</h3>
             <div className="row">
                 <div className="col">
-                <div className="card" style={{ backgroundImage: 'url(path_to_image_1.jpg)' }}>
+                <div className="card" style={{ backgroundImage: 'url(https://i.ibb.co/3FrTsbc/miining-pic.jpg)' }}>
                     <div className="card-body">
                     <h5 className="card-title">Mining</h5>
                     <br />
@@ -41,7 +41,7 @@ const AboutPage = () => {
                 </div>
                 </div>
                 <div className="col">
-                <div className="card" style={{ backgroundImage: 'url(path_to_image_2.jpg)' }}>
+                <div className="card" style={{ backgroundImage: 'url(https://i.ibb.co/LnxVhzQ/border.jpg)' }}>
                     <div className="card-body">
                     <h5 className="card-title">Border to Border</h5>
                     <br />
@@ -50,7 +50,7 @@ const AboutPage = () => {
                 </div>
                 </div>
                 <div className="col">
-                <div className="card" style={{ backgroundImage: 'url(path_to_image_3.jpg)' }}>
+                <div className="card" style={{ backgroundImage: 'url(https://i.ibb.co/kXhqxD8/health.jpg)' }}>
                     <div className="card-body">
                     <h5 className="card-title">Health</h5>
                     <br />

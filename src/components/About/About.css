@@ -41,6 +41,10 @@
     background-size: cover;
     background-position: center;
   }
+
+  .card-body {
+    color: rgb(206, 29, 37); /* Replace "blue" with your desired color */
+  }
   
   
   /* Add this class to each card element in your JSX */

@@ -3,19 +3,13 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CS
 import './Home.css';
 
 const Home = () => {
-  const backgroundImageStyle = {
-    backgroundImage: `url('EpheFrans/src/assets/your_background_image.jpg')`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  };
-
   return (
-    <div className="jumbotron-fluid landing-page-container" style={backgroundImageStyle}>
+    <div className="jumbotron-fluid landing-page-container">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 left-section">
             <img
-              src="EpheFrans/src/assets/trucks 3.png"
+              src="https://i.ibb.co/7WM21rX/Trucks.jpg"
               alt="Welcome Image"
               className="welcome-image"
             />
@@ -39,9 +33,9 @@ const Home = () => {
                 Help us Congratulate him.
               </p>
               <img
-                src="EpheFrans/src/assets/maloma drives.jpg"
+                src="https://i.ibb.co/XZSSMR1/maloma-drives.jpg"
                 alt="Welcome Image"
-                className="welcome-image"
+                className="welcome-image_1"
               />
             </section>
           </div>
