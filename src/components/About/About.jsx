@@ -3,8 +3,9 @@ import React from 'react';
 const AboutPage = () => {
   return ( 
     <>
+     <br />
       <h2>About Us</h2>
-      <br />
+     
       <div className="card">
         <h5 className="card-header">About Our Trucking Company</h5>
         <div className="card-body">

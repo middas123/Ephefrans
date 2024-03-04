@@ -1,6 +1,6 @@
 
 .card {
-    border: 1px solid #ddd;
+    border: 1px solid #301b91;
     border-radius: 8px;
     margin: 20px;
     padding: 20px;
@@ -21,7 +21,7 @@
   /* Styles for the heading above the card */
   h2 {
     text-align: center;
-    color: #323c9c;
+    color: #1b2ab4;
     margin-bottom: 20px;
   }
   
