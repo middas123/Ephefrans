@@ -37,16 +37,10 @@
   }
   /* external CSS file (e.g., styles.css) */
 
-  .card-with-background {
+.card-with-background {
     background-size: cover;
     background-position: center;
-    transition: transform 0.3s ease-in-out;
   }
-  
-  .card-with-background:hover {
-    transform: scale(1.05); /* Adjust the scale factor as needed */
-  }
-  
 
   .card-body {
     color: rgb(206, 29, 37); 
