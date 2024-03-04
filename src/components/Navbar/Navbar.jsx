@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import './Navbar.css';
+<br /> 
 
 function CustomNavbar() {
   const [isDarkMode, setIsDarkMode] = useState(false);
