@@ -1,0 +1,38 @@
+/* FAQ.css */
+
+.faq-container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .faq-list {
+    margin-top: 20px;
+  }
+  
+  .faq-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .faq-answer {
+    margin-top: 10px;
+    display: none;
+  }
+  
+  .faq-card.expanded {
+    background-color: #f0f0f0;
+  }
+  
+  .faq-card.expanded .faq-answer {
+    display: block;
+  }
+  
