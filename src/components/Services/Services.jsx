@@ -1,64 +1,29 @@
-// Import React and useState hook
-import React, { useState } from 'react';
+import React from 'react';
 
-// Define a functional component
-function CompanyServices() {
-  // Define state variables for mining, health, and logistics services
-  const [miningServices, setMiningServices] = useState([
-    'Exploration',
-    'Extraction',
-    'Processing',
-    'Mine Safety',
-  ]);
-
-  const [healthServices, setHealthServices] = useState([
-    'Employee Health Programs',
-    'Medical Facilities',
-    'Emergency Response',
-    'Occupational Health',
-  ]);
-
-  const [logisticsServices, setLogisticsServices] = useState([
-    'Transportation',
-    'Supply Chain Management',
-    'Customs Clearance',
-    'Border Security',
-  ]);
-
-  // Render the component
+const CompanyServicesCard = () => {
   return (
-    <div>
-      <h1>Company Services</h1>
+    <div className="card">
+      <div className="card-header">
+        <h3>Our Services</h3>
+      </div>
+      <div className="card-body">
+        <h4>Mining Services</h4>
+        <p>
+          We specialize in various mining operations, leveraging state-of-the-art technology and sustainable practices to extract valuable resources efficiently.
+        </p>
 
-      <section>
-        <h2>Mining Services</h2>
-        <ul>
-          {miningServices.map((service, index) => (
-            <li key={index}>{service}</li>
-          ))}
-        </ul>
-      </section>
+        <h4>Health Services</h4>
+        <p>
+          Our commitment extends to health services, ensuring the well-being of our workforce through comprehensive healthcare programs and facilities.
+        </p>
 
-      <section>
-        <h2>Health Services</h2>
-        <ul>
-          {healthServices.map((service, index) => (
-            <li key={index}>{service}</li>
-          ))}
-        </ul>
-      </section>
-
-      <section>
-        <h2>Logistics Services</h2>
-        <ul>
-          {logisticsServices.map((service, index) => (
-            <li key={index}>{service}</li>
-          ))}
-        </ul>
-      </section>
+        <h4>Border-to-Border Logistics</h4>
+        <p>
+          Seamlessly connecting regions, our logistics services span borders to ensure the smooth transportation of goods, meeting the diverse needs of our clients.
+        </p>
+      </div>
     </div>
   );
-}
+};
 
-// Export the component for use in other parts of your application
-export default CompanyServices;
+export default CompanyServicesCard;
