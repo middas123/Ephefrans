@@ -8,6 +8,16 @@
     margin-bottom: 40px;
   }
   
+  .contact-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 30px;
+  }
+  
   .form-group {
     margin-bottom: 20px;
   }
