@@ -29,7 +29,7 @@ const Contact = () => {
     }
   };
 
-  const googleMapsApiKey = 'YOUR_GOOGLE_MAPS_API_KEY';
+  const googleMapsApiKey = 'https://www.google.com/maps?q=your-location';
 
   const mapContainerStyle = {
     height: '400px',
@@ -90,9 +90,10 @@ const Contact = () => {
                       required
                     ></textarea>
                   </div>
+                  < br />
                   <ReCAPTCHA
                     ref={recaptchaRef}
-                    sitekey="YOUR_RECAPTCHA_SITE_KEY"
+                    sitekey="6Leq8oopAAAAAFLXP9X-SFVaYhFyY6S_1Wd9oEzk"
                   />
                   <button type="submit" className="btn btn-primary">
                     Submit
