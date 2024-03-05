@@ -95,6 +95,7 @@ const Contact = () => {
                     ref={recaptchaRef}
                     sitekey="6Leq8oopAAAAAFLXP9X-SFVaYhFyY6S_1Wd9oEzk"
                   />
+                  < br />
                   <button type="submit" className="btn btn-primary">
                     Submit
                   </button>
