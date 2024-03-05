@@ -20,7 +20,7 @@ const Contact = () => {
     <div className="contact-container">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 offset-lg-3">
+          <div className="col-lg-6">
             <div className="card contact-card">
               <div className="card-body">
                 <h2 className="card-title section-title">Contact Us</h2>
@@ -69,6 +69,16 @@ const Contact = () => {
                     Submit
                   </button>
                 </form>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <div className="card contact-card">
+              <div className="card-body">
+                <h2 className="card-title section-title">Location</h2>
+                <div style={{ height: '400px', width: '100%' }}>
+                  {/* Add your map component or embed a map here */}
+                </div>
               </div>
             </div>
           </div>
