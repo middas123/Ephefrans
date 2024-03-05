@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Contact.css';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const Contact = () => {
+  const recaptchaRef = useRef(null);
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -13,7 +17,28 @@ const Contact = () => {
       alert('Please enter a valid email address.');
     } else {
       // Perform your form submission logic here
+
+      // Check reCAPTCHA
+      const recaptchaValue = recaptchaRef.current.getValue();
+      if (!recaptchaValue) {
+        alert('Please verify that you are not a robot.');
+        return;
+      }
+
+      // Form submission logic...
     }
+  };
+
+  const googleMapsApiKey = 'YOUR_GOOGLE_MAPS_API_KEY';
+
+  const mapContainerStyle = {
+    height: '400px',
+    width: '100%'
+  };
+
+  const center = {
+    lat: 37.7749, // Replace with your latitude
+    lng: -122.4194 // Replace with your longitude
   };
 
   return (
@@ -65,6 +90,10 @@ const Contact = () => {
                       required
                     ></textarea>
                   </div>
+                  <ReCAPTCHA
+                    ref={recaptchaRef}
+                    sitekey="YOUR_RECAPTCHA_SITE_KEY"
+                  />
                   <button type="submit" className="btn btn-primary">
                     Submit
                   </button>
@@ -76,9 +105,15 @@ const Contact = () => {
             <div className="card contact-card">
               <div className="card-body">
                 <h2 className="card-title section-title">Location</h2>
-                <div style={{ height: '400px', width: '100%' }}>
-                  {/* Add your map component or embed a map here */}
-                </div>
+                <LoadScript googleMapsApiKey={googleMapsApiKey}>
+                  <GoogleMap
+                    mapContainerStyle={mapContainerStyle}
+                    center={center}
+                    zoom={15}
+                  >
+                    <Marker position={center} />
+                  </GoogleMap>
+                </LoadScript>
               </div>
             </div>
           </div>
@@ -86,6 +121,6 @@ const Contact = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Contact;
