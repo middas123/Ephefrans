@@ -25,6 +25,38 @@ const CompanyServicesCard = () => {
             Seamlessly connecting regions, our logistics services span borders to ensure the smooth transportation of goods, meeting the diverse needs of our clients.
           </p>
         </div>
+        <div>
+            <h3>Industries</h3>
+            <div className="row">
+                <div className="col">
+                <div className="card" style={{ backgroundImage: 'url(https://i.ibb.co/3FrTsbc/miining-pic.jpg)' }}>
+                    <div className="card-body">
+                    <h5 className="card-title">Mining</h5>
+                    <br />
+                    <p className="card-text">Content for the first industry goes here.</p>
+                    </div>
+                </div>
+                </div>
+                <div className="col">
+                <div className="card" style={{ backgroundImage: 'url(https://i.ibb.co/LnxVhzQ/border.jpg)' }}>
+                    <div className="card-body">
+                    <h5 className="card-title">Border to Border</h5>
+                    <br />
+                    <p className="card-text">Content for the second industry goes here.</p>
+                    </div>
+                </div>
+                </div>
+                <div className="col">
+                <div className="card" style={{ backgroundImage: 'url(https://i.ibb.co/kXhqxD8/health.jpg)' }}>
+                    <div className="card-body">
+                    <h5 className="card-title">Health</h5>
+                    <br />
+                    <p className="card-text">Content for the third industry goes here.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+          </div>
       </div>
     </div>
   );

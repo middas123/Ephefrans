@@ -10,7 +10,7 @@ import FAQ from './components/FAQ/FAQ';
 
 
 function App() {
-
+  
     return (
       <div>
         <Navbar />
