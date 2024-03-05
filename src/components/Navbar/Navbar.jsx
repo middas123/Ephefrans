@@ -46,6 +46,7 @@ function CustomNavbar() {
         </Container>
       </Navbar>
     </div>
+    
   );
 }
 

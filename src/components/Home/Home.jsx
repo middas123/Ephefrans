@@ -3,7 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CS
 import './Home.css';
 
 const Home = () => {
+ 
   return (
+    
     <div className="jumbotron-fluid landing-page-container">
       <div className="container">
         <div className="row">
