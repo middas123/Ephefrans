@@ -5,9 +5,13 @@
   .card.contact-card {
     background-color: #6986a3;
     border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add box-shadow property */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s; /* Add transition property */
   }
   
+  .card.contact-card:hover {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Change the shadow color on hover */
+  }
   .section-title {
     color: #6986a3;
     font-size: 24px;

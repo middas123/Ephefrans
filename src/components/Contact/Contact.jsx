@@ -50,21 +50,32 @@ const Contact = () => {
               <div className="card-body">
                 <h2 className="card-title section-title">Contact Us</h2>
                 <form onSubmit={handleSubmit}>
+                <div className="form-group row">
+                    <div className="col">
+                        <label htmlFor="name">Full Names:</label>
+                        <input
+                        type="text"
+                        className="form-control"
+                        id="Name"
+                        required
+                        />
+                    </div>
+                    <div className="col">
+                        <label htmlFor="name">Company Name:</label>
+                        <input
+                        type="text"
+                        className="form-control"
+                        id="Company Name"
+                        required
+                        />
+                    </div>
+                    </div>
                   <div className="form-group">
-                    <label htmlFor="name">Name</label>
+                    <label htmlFor="Company Email">Company Email</label>
                     <input
-                      type="text"
+                      type="Company Email"
                       className="form-control"
-                      id="name"
-                      required
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="email">Email</label>
-                    <input
-                      type="email"
-                      className="form-control"
-                      id="email"
+                      id="Company Email"
                       required
                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                     />
@@ -97,7 +108,7 @@ const Contact = () => {
                   />
                   < br />
                   <button type="submit" className="btn btn-primary">
-                    Submit
+                  Talk to Ontha
                   </button>
                 </form>
               </div>
