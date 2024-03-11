@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Contact.css';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
@@ -6,15 +6,6 @@ import ReCAPTCHA from 'react-google-recaptcha';
 
 const Contact = () => {
   const recaptchaRef = useRef(null);
-  const [currentTime, setCurrentTime] = useState(new Date());
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentTime(new Date());
-    }, 1000);
-
-    return () => clearInterval(intervalId);
-  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -42,19 +33,12 @@ const Contact = () => {
 
   const mapContainerStyle = {
     height: '400px',
-    width: '100%',
+    width: '100%'
   };
 
   const center = {
     lat: 37.7749, // Replace with your latitude
-    lng: -122.4194, // Replace with your longitude
-  };
-
-  const formatTime = (date) => {
-    const hours = date.getHours().toString().padStart(2, '0');
-    const minutes = date.getMinutes().toString().padStart(2, '0');
-    const seconds = date.getSeconds().toString().padStart(2, '0');
-    return `${hours}:${minutes}:${seconds}`;
+    lng: -122.4194 // Replace with your longitude
   };
 
   return (
@@ -66,26 +50,26 @@ const Contact = () => {
               <div className="card-body">
                 <h2 className="card-title section-title">Contact Us</h2>
                 <form onSubmit={handleSubmit}>
-                  <div className="form-group row">
+                <div className="form-group row">
                     <div className="col">
-                      <label htmlFor="name">Full Names:</label>
-                      <input
+                        <label htmlFor="name">Full Names:</label>
+                        <input
                         type="text"
                         className="form-control"
                         id="Name"
                         required
-                      />
+                        />
                     </div>
                     <div className="col">
-                      <label htmlFor="name">Company Name:</label>
-                      <input
+                        <label htmlFor="name">Company Name:</label>
+                        <input
                         type="text"
                         className="form-control"
                         id="Company Name"
                         required
-                      />
+                        />
                     </div>
-                  </div>
+                    </div>
                   <div className="form-group">
                     <label htmlFor="Company Email">Company Email</label>
                     <input
@@ -117,14 +101,14 @@ const Contact = () => {
                       required
                     ></textarea>
                   </div>
-                  <br />
+                  < br />
                   <ReCAPTCHA
                     ref={recaptchaRef}
                     sitekey="6Leq8oopAAAAAFLXP9X-SFVaYhFyY6S_1Wd9oEzk"
                   />
-                  <br />
+                  < br />
                   <button type="submit" className="btn btn-primary">
-                    Talk to Ontha
+                  Talk to Ontha
                   </button>
                 </form>
               </div>
@@ -143,10 +127,6 @@ const Contact = () => {
                     <Marker position={center} />
                   </GoogleMap>
                 </LoadScript>
-                <div className="floating-clock">
-                  <h3>Current Time</h3>
-                  <p>{formatTime(currentTime)}</p>
-                </div>
               </div>
             </div>
           </div>
