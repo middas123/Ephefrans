@@ -7,14 +7,11 @@ const FAQComponent = () => {
   const faqs = [
     { question: 'What services do you offer?', answer: 'We offer mining, health, and border-to-border logistics services.' },
     { question: 'How can I contact customer support?', answer: 'You can contact our support team at Ephe.Frans@transport.com or call us at (079) 604-6475.' },
-    { question: 'What services do you offer?', answer: 'We provide transportation services in the mining, health, and border-to-border logistics industries.' },
-    { question: 'Is EpheFrans trustworthy?', answer: 'Yes, We have over 200 clients from all over the continent and we have always delieved and are voted number one in africa.' },
-    { question: 'Do you deliver border to border?', answer: 'Yes, we deliver everywhere in the continent.' },
-    { question: 'Do you have discounts?', answer: 'We sometimes run promotions and lucky draws, winners get free deliver within 250km radius.' },
+    { question: 'Is EpheFrans trustworthy?', answer: 'Yes, We have over 200 clients from all over the continent and we have always delivered and are voted number one in Africa.' },
+    { question: 'Do you deliver border to border?', answer: 'Yes, we deliver everywhere on the continent.' },
+    { question: 'Do you have discounts?', answer: 'We sometimes run promotions and lucky draws, winners get free delivery within a 250km radius.' },
     // Add more FAQ entries as needed
   ];
-    // Add more FAQs as needed
-  
 
   const [activeIndex, setActiveIndex] = useState(null);
 
